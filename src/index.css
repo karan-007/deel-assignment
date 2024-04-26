@@ -21,14 +21,45 @@ code {
 }
 
 #auto_complete_input {
-  width: 500px;
-  height: 25px;
+  border: none;
+  width: 100%;
+  height: 96%;
+}
+input:focus {
+  outline: none;
 }
 
 #suggestions {
-  width: 500px;
+  width: 30.75rem;
   display: flex;
   flex-direction: column;
-  gap: 5px;
   border: 1px solid black;
+  border-top: none;
+  text-align: left;
+  overflow: auto;
+  max-height: 30rem;
+}
+
+#suggestion {
+  padding: 0.15rem 0rem;
+  padding-left: 0.5rem;
+}
+#suggestion:hover {
+  background-color: lightgrey;
+}
+
+#input-wrapper {
+  border: 1px solid black;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 30rem;
+  height: 2.5rem;
+  border-radius: 0.5rem;
+  margin-top: 2rem;
+  padding: 0rem 0.5rem;
+}
+
+#clear-text {
+  cursor: pointer;
 }
