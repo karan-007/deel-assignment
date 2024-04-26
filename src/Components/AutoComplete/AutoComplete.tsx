@@ -1,6 +1,7 @@
 import useAutoComplete from "./Hooks/useAutoComplete";
 
 const URL = "https://restcountries.com/v3.1/name/";
+// This API gives out the list of countries in response, it searches over common name, official name, Country shorthands etc.
 
 export default function AutoComplete() {
   const {
